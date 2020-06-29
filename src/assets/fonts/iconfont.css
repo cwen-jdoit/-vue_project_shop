@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1593352698374'); /* IE9 */
+  src: url('iconfont.eot?t=1593352698374#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPAAAsAAAAAB9QAAAN0AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDPIJ6ATYCJAMMCwgABCAFhG0HNRu/BhFVlLtkPxJs2wkr61u9qLLztHFqG7EmlOQMyquq05ksLB3hl4RpgACCtlvTdak3KkJ1yZ5vPct2Jt8x82F5cBqlEBIsiv85Zrqq58P8QHPJShrtDXA8oAFF5EWT3YEcoB7zKYhn08H/BJwHAkAY6jAF8fUPjYUgWOjTCABSWlSQBcGEHmxFKYEgCLiCtSzIJHgQZIaYSwAmvJ8nb2BNBAEGPAp9bmS+Xy48n7PPVWgnvxOpDgKC4awA+E0ABWAKgAVIeqE9ETSIm4JCWJWz1bkcWBAwQ4X4fDy+JuWMf3gAAwIQDnqxKADAkCYY4Dlr8SOFCoRH3UABABwuo2AGwCroFFm8NwUjqEQqSYEY6bo+fBVlTOchYfHhI4R2HRURIV03Rq4BIiOHQVpWn9ZbbVDl1qst7ofZ8+Vmy85TnDVL1rLMk50FjquZLwduaeT0+cNK86HrVMzzrNLddVUnDF9/4Bn9OfILyAqdpSYbL140Waswd2GXctcG+Tnyyupz5shTiUomU2GJxtIbJhvR32DtXhGStN6v2Sc9Y8Ds5yOxp0xZWzlLyVrZq7BWkm2uW7vmFax1zbIFfwegcbJtW8hIkrvo0Yk9s+ICjWIrFc3UkJnMn1kaunbwzb37suoa5ZWXLAoXpPsua/aWVbDQk2o/8Hntbl6kcAQXRh2CaBgXKvQq9tHZ5yp+s7T6a69/3C50ZcF6ZUm5y38bg+dPZl1IaDFLlxRpaOT8bKT9woVrPJuKXigAmQAA/glaQr1ospcO0rav9juYYNPpl0u4fhMUYQEAd9RP/IaX/5hmhRYEMdBY8I0EDVtYTaQb6BS+xf87qarrtTIArqDAlykHAGnf7k45VmQlBAUBgCFADShBukgWawo8ImyBI8gDhJnINouQwVxkQgCMPQkQkl7AEHcUKElvJIv9AI+8P3Akc0FYfDJ7itCvUz6MpWAD1R26epnJNInyS3eoz2PJcZFHOyGbLgSRH6ZTGc7IQywwFx2LEBAvE6TkMhzHBVZeeqzFb0XWJAio6Iv8epksxQdDJYEaoHIHOrXFjJzOQmW+fwdpZ6MSVzRV2U8QM7reQcQXNkBm8rlR06W8xLjQYkIQQNhiAlJiRaMRX4C1eFQP1YSv7RBdJQLajprK/emV0/3tAhCmH0VjCCUs2HdT6dUZZMsC') format('woff2'),
+  url('iconfont.woff?t=1593352698374') format('woff'),
+  url('iconfont.ttf?t=1593352698374') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1593352698374#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mima:before {
+  content: "\e61b";
+}
+
+.icon-user:before {
+  content: "\e604";
+}
+
