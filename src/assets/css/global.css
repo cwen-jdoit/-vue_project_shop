@@ -5,3 +5,11 @@ body,
     margin: 0;
     padding: 0;
 }
+
+.el-breadcrumb {
+    margin-bottom: 18px;
+}
+
+.el-table {
+    margin: 18px 0 18px 0;
+}

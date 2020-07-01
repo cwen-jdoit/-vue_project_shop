@@ -5,7 +5,7 @@
         <div class="login_box">
             <!-- 网站logo -->
             <div class="avater_box">
-                <img src="../assets/logo.png" alt="">
+                <img src="../assets/images/logo.png" alt="">
             </div>
             <!-- 登录表单 -->
             <el-form ref="loginFormRef" :model="loginForm" :rules="rules" label-width="0px" class="login_form">
@@ -31,7 +31,7 @@
 export default {
     data(){
         return{
-            //todo 表单数据绑定
+            // todo 表单数据绑定
             loginForm:{
                 username:'admin',
                 password:'123456'
@@ -54,7 +54,7 @@ export default {
         resetForm(){
            this.$refs.loginFormRef.resetFields();
         },
-        // 表单与验证
+        // 表单预验证
         validateForm(){
             this.$refs.loginFormRef.validate(async result=>{
                 //todo 验证通过发送登录请求(用message方法弹出提示框)
