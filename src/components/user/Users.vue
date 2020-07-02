@@ -68,7 +68,7 @@
         @current-change="handleCurrentChange"
         :current-page="usersInfo.pagenum"
         :page-sizes="[1, 2, 3, 4]"
-        :page-size="2"
+        :page-size="usersInfo.pagesize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="total"
       ></el-pagination>
