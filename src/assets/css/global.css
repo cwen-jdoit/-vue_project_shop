@@ -14,3 +14,7 @@ body,
 .el-table {
     margin: 18px 0 18px 0;
 }
+
+.el-cascader-panel {
+    height: 300px;
+}
