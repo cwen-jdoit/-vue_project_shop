@@ -29,9 +29,9 @@
         <el-table-column prop="is_send" label="是否发货"></el-table-column>
         <el-table-column prop="create_time" label="下单时间"></el-table-column>
         <el-table-column label="操作">
-          <template>
+          <template slot-scope="scope">
             <el-button type="primary" size="mini" icon="el-icon-edit" @click="showOrderEdit"></el-button>
-            <el-button type="success" size="mini" icon="el-icon-location-outline" @click="showLog"></el-button>
+            <el-button type="success" size="mini" icon="el-icon-location-outline" @click="showLog(scope.row)"></el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -163,7 +163,7 @@ export default {
       this.$refs.orderFormRef.resetFields();
     },
     //# 查看物流信息
-    showLog() {
+    showLog(row) {
       // 查询物流信息并展示 (接口有误，用假数据模拟)
       const res = {
         data: [

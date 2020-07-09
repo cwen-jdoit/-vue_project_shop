@@ -1,26 +1,30 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './plugins/element.js'
 import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 import ZkTable from 'vue-table-with-tree-grid'
 import axios from 'axios'
+import NProgress from 'nprogress' //进度条
 
 //cwen 富文本编辑器组件
 import VueQuillEditor from 'vue-quill-editor'
 
 //cwen 富文本编辑器样式
-import 'quill/dist/quill.core.css' // import styles
-import 'quill/dist/quill.snow.css' // for snow theme
-import 'quill/dist/quill.bubble.css' // for bubble theme
-
+import 'nprogress/nprogress.css' //季度条样式
 
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 axios.interceptors.request.use(config => {
+    NProgress.start(); //发送请求开始
     config.headers.Authorization = window.sessionStorage.getItem('token'); // 通过拦截器给请求头添加token
     return config
 })
+
+axios.interceptors.response.use(config => {
+    NProgress.done(); //接收到响应结束
+    return config
+})
+
 Vue.prototype.$http = axios
 Vue.component('tree-table', ZkTable)
 Vue.use(VueQuillEditor)

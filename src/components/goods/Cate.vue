@@ -36,9 +36,14 @@
           <el-tag type="warning" v-else>三级</el-tag>
         </template>
         <!-- 操作 -->
-        <template slot="showit">
+        <template slot="showit" slot-scope="scope">
           <el-button type="primary" icon="el-icon-edit" size="mini">编辑</el-button>
-          <el-button type="danger" icon="el-icon-delete" size="mini">删除</el-button>
+          <el-button
+            type="danger"
+            icon="el-icon-delete"
+            size="mini"
+            @click="deleteCate(scope.row)"
+          >删除</el-button>
         </template>
       </tree-table>
       <!-- 分页 -->
@@ -250,7 +255,9 @@ export default {
         this.getCategories();
         this.dialogVisibleCate = false;
       });
-    }
+    },
+    // 监听删除商品分类
+    deleteCate(row) {}
   }
 };
 </script>
